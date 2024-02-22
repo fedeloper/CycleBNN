@@ -1,0 +1,15 @@
+universe = docker
+docker_image = 1208977/fontana_docker:ciao3
+executable = /bin/sh
+arguments = run.sh
+output = /data1/fontana/BiDet/CondorLogs/out.$(ClusterId).$(ProcId)16
+error = /data1/fontana/BiDet/CondorLogs/err.$(ClusterId).$(ProcId)
+log = /data1/fontana/BiDet/CondorLogs/log.$(ClusterId).$(ProcId)
+request_cpus = 1
+request_gpus = 1
+request_memory = 16G
+request_disk = 50G
++MountData1=TRUE
++MountData2=FALSE
++MountHomes=FALSE
+queue 1

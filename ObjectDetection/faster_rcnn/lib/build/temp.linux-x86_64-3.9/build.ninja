@@ -1,0 +1,22 @@
+ninja_required_version = 1.3
+cxx = c++
+
+cflags = -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/data1/fontana/BiDet/faster_rcnn/lib/model/csrc -I/usr/local/lib/python3.9/site-packages/torch/include -I/usr/local/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/usr/local/lib/python3.9/site-packages/torch/include/TH -I/usr/local/lib/python3.9/site-packages/torch/include/THC -I/usr/local/include/python3.9 -c
+post_cflags = -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0
+ldflags = 
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+
+
+build /data1/fontana/BiDet/faster_rcnn/lib/build/temp.linux-x86_64-3.9/data1/fontana/BiDet/faster_rcnn/lib/model/csrc/cpu/ROIAlign_cpu.o: compile /data1/fontana/BiDet/faster_rcnn/lib/model/csrc/cpu/ROIAlign_cpu.cpp
+build /data1/fontana/BiDet/faster_rcnn/lib/build/temp.linux-x86_64-3.9/data1/fontana/BiDet/faster_rcnn/lib/model/csrc/cpu/nms_cpu.o: compile /data1/fontana/BiDet/faster_rcnn/lib/model/csrc/cpu/nms_cpu.cpp
+build /data1/fontana/BiDet/faster_rcnn/lib/build/temp.linux-x86_64-3.9/data1/fontana/BiDet/faster_rcnn/lib/model/csrc/vision.o: compile /data1/fontana/BiDet/faster_rcnn/lib/model/csrc/vision.cpp
+
+
+
+
+

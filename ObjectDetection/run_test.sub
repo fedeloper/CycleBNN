@@ -1,0 +1,12 @@
+universe = docker
+docker_image = 1208977/fontana_docker:ciao3
+executable = /bin/sh
+arguments = run_test.sh
+output = /data1/fontana/BiDet/CondorLogs/out.$(ClusterId).$(ProcId)16
+error = /data1/fontana/BiDet/CondorLogs/err.$(ClusterId).$(ProcId)
+log = /data1/fontana/BiDet/CondorLogs/log.$(ClusterId).$(ProcId)
+requirements = TARGET.Machine == "node120.di.rm1"
++MountData1=TRUE
++MountData2=FALSE
++MountHomes=FALSE
+queue 1
