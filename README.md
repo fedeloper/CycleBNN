@@ -9,7 +9,8 @@ Welcome to the CycleBNN. This repository is dedicated to facilitating the traini
 Before proceeding with the training or fine-tuning processes, it is essential to set up the environment correctly. Please use the following Docker image to ensure compatibility and reproducibility of results:
 
 ```
-docker pull 1208977/fontana_docker:ciao3
+docker pull 1208977/random_cyclebnn
+
 ```
 
 This Docker image contains all necessary dependencies and environments pre-configured for your convenience.
