@@ -59,8 +59,9 @@ After fine-tuning, you can test the performance of the ResNet18 model on the Pas
 This will evaluate the model against the dataset and provide performance metrics.
 
 
-##Results
-<img src="res.jpg" alt="image" width="75%" height="auto">
+## Results
+
+<img src="res.jpg" alt="image" width="25%" height="auto">
 
 ## Acknowledgments
 
