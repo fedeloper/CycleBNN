@@ -59,6 +59,9 @@ After fine-tuning, you can test the performance of the ResNet18 model on the Pas
 This will evaluate the model against the dataset and provide performance metrics.
 
 
+##Results
+<img src="res.jpeg" alt="image" width="75%" height="auto">
+
 ## Acknowledgments
 
 This work is based on contributions from several outstanding repositories. We extend our gratitude to the authors of the following repositories for their groundbreaking work in the field of efficient computing and binary neural networks:
