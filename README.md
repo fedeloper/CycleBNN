@@ -2,7 +2,7 @@
 
 # CycleBNN
 
-![Alt text](image.png)
+![Alt text](image.png=250x)
 Welcome to the CycleBNN. This repository is dedicated to facilitating the training of Binary Neural Networks (BNNs) with a focus on efficiency. Our training routines are designed to work with ImageNet, CIFAR-10, and Pascal VOC datasets.
 
 ## Environment Setup
