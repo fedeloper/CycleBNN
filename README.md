@@ -60,7 +60,7 @@ This will evaluate the model against the dataset and provide performance metrics
 
 
 ##Results
-<img src="res.jpeg" alt="image" width="75%" height="auto">
+<img src="res.jpg" alt="image" width="75%" height="auto">
 
 ## Acknowledgments
 
